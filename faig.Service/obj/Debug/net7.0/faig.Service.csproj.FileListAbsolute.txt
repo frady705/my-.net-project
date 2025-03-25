@@ -1,0 +1,15 @@
+C:\Users\user1\Desktop\faig\faig.Service\bin\Debug\net7.0\faig.Service.deps.json
+C:\Users\user1\Desktop\faig\faig.Service\bin\Debug\net7.0\faig.Service.dll
+C:\Users\user1\Desktop\faig\faig.Service\bin\Debug\net7.0\faig.Service.pdb
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.dll
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\refint\faig.Service.dll
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.pdb
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\ref\faig.Service.dll
+C:\Users\user1\Desktop\faig\faig.Service\bin\Debug\net7.0\faig.Core.dll
+C:\Users\user1\Desktop\faig\faig.Service\bin\Debug\net7.0\faig.Core.pdb
+C:\Users\user1\Desktop\faig\faig.Service\obj\Debug\net7.0\faig.Service.csproj.CopyComplete

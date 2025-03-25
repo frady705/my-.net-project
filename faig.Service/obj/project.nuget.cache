@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xfZw8yR3QLqM8LY5o2b5BNwavRsi738OwHAy/b8p7OCJiQ2ZVP5fM31roYxs/yaK8Jq44T6Wp9mKkg4QNM+aPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\faig\\faig.Service\\faig.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

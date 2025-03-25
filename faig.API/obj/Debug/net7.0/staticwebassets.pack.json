@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user1\\Desktop\\faig\\faig.API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\faig.API.bundle.scp.css",
+      "PackagePath": "staticwebassets\\faig.API.bundle.scp.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.faig.API.props",
+      "PackagePath": "build\\faig.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.faig.API.props",
+      "PackagePath": "buildMultiTargeting\\faig.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.faig.API.props",
+      "PackagePath": "buildTransitive\\faig.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.faig.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

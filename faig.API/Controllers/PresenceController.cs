@@ -1,4 +1,6 @@
-﻿using faig.API.Models;
+﻿using AutoMapper;
+using faig.API.Models;
+using faig.Core.DTOs;
 using faig.Core.Entities;
 using faig.Core.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -12,17 +14,20 @@ namespace faig.API.Controllers
     public class PresenceController : ControllerBase
     {
         private readonly IPresenceService _presenceService;
-        public PresenceController(IPresenceService presenceService)
+        private readonly IMapper _mapper;
+        public PresenceController(IPresenceService presenceService,IMapper mapper)
         {
             _presenceService = presenceService;
+            _mapper = mapper;
         }
 
         // GET: api/<presenceController>
         [HttpGet]
         public ActionResult Get()
         {
-            var presence = _presenceService.GetList();
-            return Ok(presence);
+            var list = _presenceService.GetList();
+            var listDto = _mapper.Map<IEnumerable<PresenceDto>>(list);
+            return Ok(listDto);
         }
 
         // GET api/<presenceController>/5
@@ -30,7 +35,8 @@ namespace faig.API.Controllers
         public ActionResult Get(int id)
         {
             var presence = _presenceService.GetById(id);
-            return Ok(presence);
+            var presenceDto = _mapper.Map<UserDto>(presence);
+            return Ok(presenceDto);
         }
 
         // POST api/<presenceController>

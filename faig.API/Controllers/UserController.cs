@@ -26,7 +26,7 @@ namespace faig.API.Controllers
         public ActionResult Get()
         {
             var list=_userService.GetList();
-            var listDto = _mapper.Map<IEnumerable<UserDto>>(list)
+            var listDto = _mapper.Map<IEnumerable<UserDto>>(list);
             return Ok(listDto);
         }
 

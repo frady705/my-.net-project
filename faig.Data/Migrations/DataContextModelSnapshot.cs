@@ -37,11 +37,13 @@ namespace faig.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DepartureTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DepartureTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("EntryTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("EntryTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -77,10 +79,6 @@ namespace faig.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Users");
@@ -89,12 +87,17 @@ namespace faig.Data.Migrations
             modelBuilder.Entity("faig.Core.Entities.Presence", b =>
                 {
                     b.HasOne("faig.Core.Entities.User", "User")
-                        .WithMany()
+                        .WithMany("Presence")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("faig.Core.Entities.User", b =>
+                {
+                    b.Navigation("Presence");
                 });
 #pragma warning restore 612, 618
         }

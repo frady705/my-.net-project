@@ -18,37 +18,40 @@ namespace faig.Service
 
 
 
-        public List<User> GetList()
+        public async Task<List<User>> GetListAsync()
         {
-            return _userRepository.GetAll();
+            return await _userRepository.GetAllAsync();
         }
 
-        public User? GetById(int id)
+        public async Task< User?> GetByIdAsync(int id)
         {
-            return _userRepository.GetById(id);
+            return await _userRepository.GetByIdAsync(id);
         }
 
-        public User Add(User user)
+        public async Task<User> AddAsync(User user)
         {
-            var addUser=_userRepository.Add(user);
-            _repositoryManager.Save();
+            var addUser=await _userRepository.AddAsync(user);
+            await _repositoryManager.SaveAsync();
             return addUser;
         }
 
-        public User Update(User user)
+        public async Task<User> UpdateAsync(User user)
         {
-            var updateUser=_userRepository.Update(user);
-            _repositoryManager.Save();
+            var updateUser=await _userRepository.UpdateAsync(user);
+           await _repositoryManager.SaveAsync();
             return updateUser;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            _userRepository.Delete(id);
-            _repositoryManager.Save();
+            await _userRepository.DeleteAsync(id);
+           await _repositoryManager.SaveAsync();
+        }
+        public async Task<User?> GetByUserNamePasswordAsync(string name, string password)
+        {
+            return await _userRepository.GetByUserNamePasswordAsync(name, password);
         }
 
-      
     }
 
    

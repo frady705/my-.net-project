@@ -20,25 +20,25 @@ namespace faig.Data.Repositories
         {
             return _context.Presence.Include(u => u.User);
         }
-        public List<Presence> GetAll()
+        public async Task< List<Presence>> GetAllAsync()
         {
-            return _context.Presence.ToList();
+            return await _context.Presence.ToListAsync();
         }
 
-        public Presence? GetById(int id)
+        public async Task<Presence?> GetByIdAsync(int id)
         {
-            return _context.Presence.ToList().FirstOrDefault(x => x.Id == id);
+            return await _context.Presence.FirstOrDefaultAsync(x => x.Id == id);
 
         }
-        public Presence Add(Presence presence)
+        public async Task<Presence> AddAsync(Presence presence)
         {
-            _context.Presence.Add(presence);
+           await _context.Presence.AddAsync(presence);
             return presence;
         }
 
-        public Presence Update(Presence presence)
+        public async Task<Presence> UpdateAsync(Presence presence)
         {
-            var existingPresence = GetById(presence.Id);
+            var existingPresence = await GetByIdAsync(presence.Id);
             if (existingPresence is null)
             {
                 throw new Exception("presence not found");
@@ -50,14 +50,15 @@ namespace faig.Data.Repositories
             return existingPresence;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var existingPresence = GetById(id);
+            var existingPresence =await GetByIdAsync(id);
             if (existingPresence is not null)
             {
                 _context.Presence.ToList().Remove(existingPresence);
             }
         }
-
+        
     }
+
 }

@@ -6,13 +6,11 @@ namespace faig.API.Models
     {
         public int UserId { get; set; }
         public DateTime Date{ get; set; }
-        public TimeSpan EntryTime { get; set; }
-        public TimeSpan DepartureTime { get; set; }
+        public string EntryTime { get; set; }
+        public string DepartureTime { get; set; }
         public string AttendanceStatus { get; set; }
 
-        public PresencePostModel()
-        {
-            Date = Date.Date;
-        }
+        
     }
+
 }

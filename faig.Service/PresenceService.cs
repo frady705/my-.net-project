@@ -2,7 +2,6 @@
 using faig.Core.Repositories;
 using faig.Core.Services;
 
-
 namespace faig.Service
 {
     public class PresenceService:IPresenceService
@@ -14,35 +13,36 @@ namespace faig.Service
             _presenceRepository = presenceRepository;
             _repositoryManager = repositoryManager;
         }
-        public List<Presence> GetList()
+        public async Task<List<Presence>> GetListAsync()
         {
-            return _presenceRepository.GetAll();
+            return await _presenceRepository.GetAllAsync();
         }
 
-        public Presence? GetById(int id)
+        public async Task<Presence?> GetByIdAsync(int id)
         {
-            return _presenceRepository.GetById(id);
+            return await _presenceRepository.GetByIdAsync(id);
         }
 
-        public Presence Add(Presence presence)
+        public async Task<Presence> AddAsync(Presence presence)
         {
-            var addPresence=_presenceRepository.Add(presence);
-            _repositoryManager.Save();
+            var addPresence=await _presenceRepository.AddAsync(presence);
+            await _repositoryManager.SaveAsync();
             return addPresence;
         }
 
-        public Presence Update(Presence presence)
+        public async Task<Presence> UpdateAsync(Presence presence)
         {
-            var updatePresence=_presenceRepository.Update(presence);
-            _repositoryManager.Save();
+            var updatePresence=await _presenceRepository.UpdateAsync(presence);
+            await _repositoryManager.SaveAsync();
             return updatePresence;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            _presenceRepository.Delete(id);
-            _repositoryManager.Save();
+            await _presenceRepository.DeleteAsync(id);
+            await _repositoryManager.SaveAsync();
         }
 
     }
+
 }

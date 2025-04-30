@@ -9,15 +9,16 @@ namespace faig.Core.Repositories
 {
     public interface IPresenceRepository
     {
-        List<Presence> GetAll();
+        Task<List<Presence>> GetAllAsync();
 
-       Presence? GetById(int id);
+       Task<Presence?> GetByIdAsync(int id);
 
-        Presence Add(Presence presence);
+        Task<Presence> AddAsync(Presence presence);
 
-        Presence Update(Presence presence);
+        Task<Presence> UpdateAsync(Presence presence);
 
-        void Delete(int id);
+        Task DeleteAsync(int id);
+       
     }
 }
 

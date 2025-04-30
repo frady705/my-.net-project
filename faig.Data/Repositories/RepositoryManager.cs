@@ -1,4 +1,5 @@
-﻿using faig.Core.Repositories;
+﻿using faig.Core.Entities;
+using faig.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,14 @@ namespace faig.Data.Repositories
             Presence = presence;
         }
 
-        public void Save()
+      /*  public void Save()
         {
-            _context.SaveChanges();
+             _context.SaveChanges();
+        }*/
+
+        public async Task SaveAsync()
+        {
+           await _context.SaveChangesAsync();
         }
     }
 }

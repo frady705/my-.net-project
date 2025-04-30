@@ -9,14 +9,16 @@ namespace faig.Core.Services
 {
     public interface IUserService
     {
-        List<User> GetList();
+        Task<List<User>> GetListAsync();
 
-        User? GetById(int id);
+        Task<User?> GetByIdAsync(int id);
 
-        User Add(User user);
+        Task<User> AddAsync(User user);
 
-        User Update(User user);
+        Task<User> UpdateAsync(User user);
 
-        void Delete(int id);
+        Task DeleteAsync(int id);
+        Task<User?> GetByUserNamePasswordAsync(string name, string password);
+
     }
 }

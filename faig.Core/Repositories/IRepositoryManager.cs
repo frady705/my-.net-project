@@ -1,4 +1,5 @@
-﻿using System;
+﻿using faig.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace faig.Core.Repositories
     {
         IUserRepository Users { get; }
         IPresenceRepository Presence { get; }
-        void Save();
+        //void Save();
+       Task SaveAsync();
     }
 }

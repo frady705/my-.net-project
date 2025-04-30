@@ -9,14 +9,14 @@ namespace faig.Core.Services
 {
     public interface IPresenceService
     {
-        List<Presence> GetList();
+        Task<List<Presence>> GetListAsync();
 
-        Presence? GetById(int id);
+        Task<Presence?> GetByIdAsync(int id);
 
-        Presence Add(Presence presence);
+        Task<Presence> AddAsync(Presence presence);
 
-        Presence Update(Presence presence);
+        Task<Presence> UpdateAsync(Presence presence);
 
-        void Delete(int id);
+        Task DeleteAsync(int id);
     }
 }

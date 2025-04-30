@@ -82,3 +82,14 @@ C:\Users\user1\Desktop\faig\faig.API\obj\Debug\net7.0\ref\faig.API.dll
 C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\faig.Service.dll
 C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\faig.Service.pdb
 C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\appsettings.Production.json
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\user1\Desktop\faig\faig.API\bin\Debug\net7.0\NLog.dll
